@@ -21,7 +21,7 @@ export class CdkS3EventStack extends cdk.Stack {
       autoDeleteObjects: true,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
-      bucketName: 'event-bucket',
+      bucketName: 'event-bucket-matsudayu-tes',
       lifecycleRules: [
         {
           expiration: cdk.Duration.days(7)
